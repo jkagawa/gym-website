@@ -7,10 +7,72 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>Title</title>
+<script src="https://kit.fontawesome.com/3ef1af0600.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<title>Lift Up Gym</title>
 </head>
 <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-black fixed-top p-0">
+        <div class="container mw-100">
+            <a href="#" class="navbar-brand text-light d-flex align-items-center"><i class="fa-solid fa-dumbbell me-2"></i> Lift Up <span class="brand-color">Gym</span></a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><i class="fa-solid fa-bars fs-3"></i></button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item text-end">
+                        <a href="#" class="nav-link text-light">About Us</a>
+                    </li>
+                    <li class="nav-item text-end">
+                        <a href="#" class="nav-link text-light">Amenities</a>
+                    </li>
+                    <li class="nav-item text-end sign-in-item">
+                        <a href="#" class="nav-link text-light">Sign In</a>
+                    </li>
+                    <li class="nav-item text-end sign-out-item">
+                        <a href="#" class="nav-link text-light">Sign Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About section -->
+    <section id="about" class="text-black text-left mt-5">
+        <div class="banner-container d-flex justify-content-center align-items-center m-0 flex-column-reverse flex-lg-row">
+                <div class="d-flex justify-content-center align-items-center flex-column col-sm-12 col-lg-6">
+                    <div class="banner-text-container pt-5 pb-5 ms-1 me-1">
+                        <div class="display-1 fw-bold">GET JACKED</div>
+                        <div class="display-5">First Month Free</div>
+                        <a href="#"><button class="fs-4 bg-black text-light mt-2 mb-2">Sign Up Now</button></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <img src="static/images/anastase-maragos-7kEpUPB8vNk-unsplash.jpg" alt="Man lifting a barbell" class="img-fluid w-100 banner-image">
+                </div>
+        </div>
+    </section>
+
+    <!-- Map section -->
+    <section id="map" class="mt-4 pb-5 bg-black text-light text-start">
+        <h1 class="p-3">Visit Us</h1>
+        <div class="d-flex flex-column flex-lg-row-reverse">
+            <div class="d-flex flex-column justify-content-center col-lg-4 p-3 pt-0">
+                <div class=""><i class="fas fa-map-marker-alt"></i> 123 Main St, Anytown, USA 12345</div>
+                <div class=""><i class="fas fa-mobile-alt"></i> (555) 555-5555</div>
+            </div>
+            <div class="d-flex align-items-center justify-content-evenly col-lg-8">
+                <div class="d-flex justify-content-center w-80">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71410.7770691508!2d-119.64621757390063!3d37.72107926934869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8096edd824db8fbd%3A0x57adcc762fb3d403!2sEl%20Capitan!5e0!3m2!1sen!2sus!4v1674929987840!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-embed rounded-lg"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="text-dark text-center p-3">Copyright &copy; 2023. All rights reserved</div>
+    </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
