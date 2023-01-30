@@ -29,12 +29,19 @@
     object-position: 50% 30%;
 }
 
+.about-banner-image {
+    height: 400px;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 50% 80%;
+}
+
 .sign-in-container {
     width: 300px;
     max-width: 85%;
 }
 
-.sign-in-container input {
+.sign-in-container input:not([type=submit]) {
     width: 100%;
     border: 1px solid black;
 }
@@ -94,6 +101,10 @@
         text-align: left;
     }
     .banner-image {
+        height: 100vh;
+        object-position: 50% 50%;
+    }
+    .about-banner-image {
         height: 100vh;
         object-position: 50% 50%;
     }
