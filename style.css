@@ -6,6 +6,10 @@
     font-size: 2rem;
 }
 
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
 .brand-color {
     color: orange;
     display: contents;
@@ -23,6 +27,28 @@
     height: 400px;
     object-fit: cover;
     object-position: 50% 30%;
+}
+
+.sign-in-container {
+    width: 300px;
+    max-width: 85%;
+}
+
+.sign-in-container input {
+    width: 100%;
+    border: 1px solid black;
+}
+
+#toast {
+    display: none;
+    margin-top: 3rem;
+    background: gray;
+    transition: opacity 2s ease;
+    height: 40px;
+}
+
+#sign-out-item {
+    display: none;
 }
 
 .mt-6 {
