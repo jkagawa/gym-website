@@ -2,15 +2,24 @@ const signedin = localStorage.getItem("signedin");
 const username = localStorage.getItem("username");
 const signInItem = document.getElementById("sign-in-item");
 const signOutItem = document.getElementById("sign-out-item");
-const toast = document.getElementById("toast");
+const is_root = location.pathname == "/" || location.pathname == "/index.html";
+const is_sign_in = location.pathname == "/sign-in.html";
 
-toast.textContent = `Welcome ${username}, you are signed in`;
+if(is_sign_in) {
+    const form = document.getElementById("form");
+    form.addEventListener("submit", () => signIn());
+}
 
 if(signedin === 'true') {
-    toast.style.display = "flex";
     signInItem.style.display = "none";
     signOutItem.style.display = "block";
-    hideToast();
+    if(is_root) {
+        const toast = document.getElementById("toast");
+        toast.textContent = `Welcome ${username}, you are signed in`;
+        toast.style.display = "flex";
+        hideToast(toast);
+    }
+    
 } else {
     signInItem.style.display = "block";
     signOutItem.style.display = "none";
@@ -18,11 +27,12 @@ if(signedin === 'true') {
 
 function signIn() {
     localStorage.setItem("signedin", true);
-    const username = "Josh";
+    const username = document.getElementById("username").value;
+    // const username = "Josh";
     localStorage.setItem("username", username);
-    window.location.href = "/";
+    window.location.href = "index.html";
 }
 
-function hideToast() {
+function hideToast(toast) {
     setTimeout(() => toast.style.opacity = 0, 5000);
 }
