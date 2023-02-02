@@ -15,7 +15,8 @@ if(signedin === 'true') {
     signOutItem.style.display = "block";
     if(is_root) {
         const toast = document.getElementById("toast");
-        toast.textContent = `Welcome ${username}, you are signed in`;
+        const toastText = document.getElementById("toast-text");
+        toastText.textContent = `Welcome ${username}, you are signed in`;
         toast.style.display = "flex";
         hideToast(toast);
     }
@@ -28,11 +29,15 @@ if(signedin === 'true') {
 function signIn() {
     localStorage.setItem("signedin", true);
     const username = document.getElementById("username").value;
-    // const username = "Josh";
     localStorage.setItem("username", username);
     window.location.href = "index.html";
 }
 
 function hideToast(toast) {
     setTimeout(() => toast.style.opacity = 0, 5000);
+}
+
+function closeToast() {
+    const toast = document.getElementById("toast");
+    toast.style.display = "none";
 }

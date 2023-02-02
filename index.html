@@ -39,7 +39,12 @@
     </nav>
 
     <!-- Toast -->
-    <div id="toast" class="text-light text-center w-100 position-fixed align-items-center justify-content-center fs-5">You are signed in</div>
+    <div id="toast" class="text-light text-center w-100 position-fixed align-items-center fs-5">
+        <div id="toast-text">You are signed in</div>
+        <div id="toast-button">
+            <button onclick="closeToast()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
 
     <!-- Main section -->
     <section class="text-black text-left mt-5">
