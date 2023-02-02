@@ -23,6 +23,10 @@
     box-shadow: 0 0 0 0.2rem;
 }
 
+.navbar .container {
+    background-color: black;
+}
+
 .banner-image {
     height: 400px;
     object-fit: cover;

@@ -2,8 +2,8 @@ const signedin = localStorage.getItem("signedin");
 const username = localStorage.getItem("username");
 const signInItem = document.getElementById("sign-in-item");
 const signOutItem = document.getElementById("sign-out-item");
-const is_root = location.pathname == "/" || location.pathname == "/index.html";
-const is_sign_in = location.pathname == "/sign-in.html";
+const is_root = location.pathname == "/" || location.pathname.split('/').pop() == "index.html";
+const is_sign_in = location.pathname.split('/').pop() == "sign-in.html";
 
 if(is_sign_in) {
     const form = document.getElementById("form");
